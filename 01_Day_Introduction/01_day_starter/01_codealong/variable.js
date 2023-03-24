@@ -1,0 +1,1 @@
+let firstName = 'Riley', lastName = 'Pinkerton', age = 28, maritalStatus = false;
