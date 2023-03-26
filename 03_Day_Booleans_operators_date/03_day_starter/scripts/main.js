@@ -124,3 +124,42 @@ let now = new Date()
 //     console.log(`You are ${age}. You are ${difference} years away from being old enough to drive.`)
 
 // }
+
+// let age = prompt('Please enter your age')
+// let seconds = 31536000 * age
+
+// console.log(`You lived ${seconds} seconds`)
+
+let year = now.getFullYear()
+let month = (now.getMonth() + 1)
+let date = now.getDate()
+let hour = now.getHours()
+let minute = now.getMinutes()
+
+if (month < 10) {
+    month = '0' + month.toString()
+}
+
+if (date < 10) {
+    date = '0' + date.toString()
+}
+
+if (hour < 10) {
+    hour = '0' + hour.toString()
+}
+
+if (minute < 10) {
+    minute = '0' + minute.toString()
+}
+
+console.log(hour)
+
+console.log(`${year}-${month}-${date} ${hour}:${minute}`)
+console.log(`${date}-${month}-${year} ${hour}:${minute}`)
+console.log(`${date}/${month}/${year} ${hour}:${minute}`)
+
+
+
+// YYYY-MM-DD HH:mm
+// DD-MM-YYYY HH:mm
+// DD/MM/YYYY HH:mm
